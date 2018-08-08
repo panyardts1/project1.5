@@ -9,7 +9,7 @@ function displaySubmitForm(){
            document.getElementById("submitForm").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/submitForm.html", true);
+    xhttp.open("GET", "/project1/submitForm.html", true);
     xhttp.send(); 
 }
 
@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/viewProfile", true);
+    xhttp.open("GET", "/project1/viewProfile", true);
     xhttp.send(); 
 }
 
@@ -35,7 +35,7 @@ function changeUserName(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/changeName.html", true);
+    xhttp.open("GET", "/project1/changeName.html", true);
     xhttp.send(); 
 }
 
@@ -46,7 +46,7 @@ function changeUserEmail(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/changeEmail.html", true);
+    xhttp.open("GET", "/project1/changeEmail.html", true);
     xhttp.send(); 
 }
 
@@ -57,7 +57,7 @@ function changeUserPassword(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/changePassword.html", true);
+    xhttp.open("GET", "/project1/changePassword.html", true);
     xhttp.send(); 
 }
 
@@ -68,7 +68,7 @@ function displayReimbursments(){
            document.getElementById("viewReimbursments").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/ReimbursementView", true);
+    xhttp.open("GET", "/project1/ReimbursementView", true);
     xhttp.send(); 
 }
 
@@ -80,7 +80,7 @@ function displayEmployeeReimbursments(){
            document.getElementById("viewReimbursments").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", "http://localhost:8080/project1/someReimbursments?eID="+eID, true);
+    xhttp.open("POST", "/project1/someReimbursments?eID="+eID, true);
     xhttp.send(eID); 
 }
 
@@ -91,7 +91,7 @@ function displayAllReimbursments(){
            document.getElementById("viewReimbursments").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/allReimbursments", true);
+    xhttp.open("GET", "/project1/allReimbursments", true);
     xhttp.send(); 
 }
 
