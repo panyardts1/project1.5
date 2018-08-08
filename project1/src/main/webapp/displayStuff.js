@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "/project1/viewProfile", true);
+    xhttp.open("GET", "/project1/Profile", true);
     xhttp.send(); 
 }
 
@@ -102,6 +102,6 @@ function displayAllEmployees(){
            document.getElementById("allEmployees").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8080/project1/allEmployees", true);
+    xhttp.open("GET", "/project1/allEmployees", true);
     xhttp.send(); 	
 }
