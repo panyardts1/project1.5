@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "/project1/ReimbursementView", true);
+    xhttp.open("GET", "/project1/allReimbursments", true);
     xhttp.send();
 }
 
