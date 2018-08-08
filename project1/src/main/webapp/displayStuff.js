@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", "/project1/Profile", true);
+    xhttp.open("POST", "project1.5/project1/Profile", true);
     xhttp.send(); 
 }
 
@@ -68,7 +68,7 @@ function displayReimbursments(){
            document.getElementById("viewReimbursments").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "/project1/ReimbursementView", true);
+    xhttp.open("GET", "project1.5/project1/ReimbursementView", true);
     xhttp.send(); 
 }
 
