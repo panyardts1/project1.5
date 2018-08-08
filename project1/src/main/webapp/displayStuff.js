@@ -20,8 +20,8 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "/project1/allReimbursments", true);
-    xhttp.send(); 
+    xhttp.open("GET", "/project1/profileView", true);
+    xhttp.send();
 }
 
 function hideUserInfo(){
