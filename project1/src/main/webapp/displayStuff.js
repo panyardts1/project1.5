@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://ec2-184-72-76-246.compute-1.amazonaws.com:8080/project1.5/project1/profileView", true);
+    xhttp.open("GET", "/project1/ReimbursementView", true);
     xhttp.send();
 }
 
