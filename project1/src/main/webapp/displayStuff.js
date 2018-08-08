@@ -68,7 +68,7 @@ function displayReimbursments(){
            document.getElementById("viewReimbursments").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "project1.5/project1/ReimbursementView", true);
+    xhttp.open("GET", "project1.5/ReimbursementView", true);
     xhttp.send(); 
 }
 
