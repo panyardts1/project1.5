@@ -20,7 +20,7 @@ function displayUserInfo(){
            document.getElementById("viewProfile").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "/project1/Profile", true);
+    xhttp.open("GET", "/Profile", true);
     xhttp.send(); 
 }
 

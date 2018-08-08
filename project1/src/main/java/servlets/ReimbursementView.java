@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import app.Employee;
+import app.EmployeeService;
 import app.Reimbursment;
 import app.ReimbursmentService;
 
@@ -33,10 +35,10 @@ public class ReimbursementView extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession session = request.getSession(false);
-		int e = (int)session.getAttribute("user");
+		Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
 		
-		List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e);
-		List<Reimbursment> resolveList = ReimbursmentService.getRService().viewEmployeeResolved(e);
+		List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e.getU_ID());
+		List<Reimbursment> resolveList = ReimbursmentService.getRService().viewEmployeeResolved(e.getU_ID());
 		
 		PrintWriter pw = response.getWriter();
 		pw.write("<!DOCTYPE html><html><head><meta charset=\"ISO-8859-1\"><title>View Profile</title>"
