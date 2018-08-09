@@ -1,0 +1,26 @@
+2018-08-01 15:27:48 ERROR EmployeeDAOImpl:55 - [Ljava.lang.StackTraceElement;@5abb27c
+2018-08-01 15:29:12 ERROR EmployeeDAOImpl:55 - [Ljava.lang.StackTraceElement;@775fc0c5
+2018-08-01 15:30:26 ERROR EmployeeDAOImpl:55 - [Ljava.lang.StackTraceElement;@4563c654
+2018-08-05 17:47:06 ERROR EmployeeDAOImpl:102 - [Ljava.lang.StackTraceElement;@5a3bc7ed
+2018-08-06 10:59:59 INFO  login:72 - Non-user attempted to log in
+2018-08-06 11:00:14 INFO  login:53 - managerB@work.com logged in
+2018-08-06 11:00:41 INFO  changeName:46 - 1 changed their name to Billy Manager
+2018-08-06 11:01:14 INFO  login:65 - somebodyS@work.com tried to log in with the wrong password
+2018-08-06 13:12:05 INFO  login:58 - somebodyS@work.com logged in
+2018-08-06 13:13:31 INFO  changeName:46 - 2 changed their name to Bob Bob
+2018-08-06 13:14:40 INFO  login:53 - managerB@work.com logged in
+2018-08-06 13:17:09 INFO  login:53 - managerB@work.com logged in
+2018-08-06 13:17:09 INFO  login:53 - managerB@work.com logged in
+2018-08-06 13:17:09 INFO  login:53 - managerB@work.com logged in
+2018-08-06 14:17:54 INFO  login:58 - somebodyS@work.com logged in
+2018-08-06 14:18:26 INFO  login:53 - managerB@work.com logged in
+2018-08-08 12:27:34 INFO  login:53 - managerB@work.com logged in
+2018-08-08 12:31:26 INFO  login:53 - managerB@work.com logged in
+2018-08-08 12:43:10 INFO  login:58 - somebodyS@work.com logged in
+2018-08-08 12:43:29 INFO  login:53 - managerB@work.com logged in
+2018-08-08 12:44:00 INFO  login:58 - somebodyS@work.com logged in
+2018-08-08 12:50:16 INFO  login:58 - somebodyS@work.com logged in
+2018-08-08 13:06:31 INFO  login:58 - somebodyS@work.com logged in
+2018-08-08 13:13:23 INFO  login:58 - somebodyS@work.com logged in
+2018-08-08 13:54:29 INFO  login:53 - managerB@work.com logged in
+2018-08-08 13:55:35 INFO  login:58 - somebodyS@work.com logged in

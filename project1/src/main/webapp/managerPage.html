@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>reimburseManagerHome</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- additional css -->
+<link rel="stylesheet" href="homeCSS.css"/>
+</head>
+<body onload="displayAllReimbursments()">
+	
+	<div class="title">
+		<p>Manager Home</p>
+	</div>
+	<div class="submitForm" id="submitForm">
+		<button onclick = "displaySubmitForm()">Submit Reimbursment</button>
+	</div>
+	<div class="employeeSearch">
+		Employee ID: <input  id="eID" type="text"/>
+		<button onclick="displayEmployeeReimbursments()">Search</button>
+	</div>
+	<div class="viewReimbursments" id="viewReimbursments">
+	</div>
+	<div class="viewProfile" id="viewProfile">
+		<button onclick = "displayUserInfo()">View Profile</button>
+	</div>
+	<div class="allEmployees" id="allEmployees">
+		<button onclick="displayAllEmployees()">View Employees</button>
+	</div>
+	<div class="logout" id="logout">
+		<form action="login.html" method="get">
+			<input type="submit" value="Log out"/>
+		</form>
+	</div>
+</body>
+
+<script src="displayStuff.js"></script>
+</html>
