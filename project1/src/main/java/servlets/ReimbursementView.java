@@ -33,7 +33,7 @@ public class ReimbursementView extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		if(request != null) {
+		try {
 			HttpSession session = request.getSession();
 			//Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
 			System.out.println((int)session.getAttribute("user"));
@@ -62,6 +62,8 @@ public class ReimbursementView extends HttpServlet {
 			pw.write(tableEnd);
 
 			pw.write("</body><script src=\"displayStuff.js\"></script></html>");*/
+		} catch (NullPointerException e) {
+			e.printStackTrace();
 		}
 	}
 
