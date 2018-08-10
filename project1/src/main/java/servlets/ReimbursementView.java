@@ -34,7 +34,7 @@ public class ReimbursementView extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		HttpSession session = request.getSession(false);
+		HttpSession session = request.getSession();
 		//Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
 		System.out.println((int)session.getAttribute("user"));
 		//List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e.getU_ID());
