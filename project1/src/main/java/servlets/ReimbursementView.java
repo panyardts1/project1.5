@@ -35,12 +35,12 @@ public class ReimbursementView extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			HttpSession session = request.getSession();
-			//Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
-			System.out.println((int)session.getAttribute("user"));
-			//List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e.getU_ID());
-			//List<Reimbursment> resolveList = ReimbursmentService.getRService().viewEmployeeResolved(e.getU_ID());
+			Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
+			//System.out.println((int)session.getAttribute("user"));
+			List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e.getU_ID());
+			List<Reimbursment> resolveList = ReimbursmentService.getRService().viewEmployeeResolved(e.getU_ID());
 			
-			/*PrintWriter pw = response.getWriter();
+			PrintWriter pw = response.getWriter();
 			pw.write("<!DOCTYPE html><html><head><meta charset=\"ISO-8859-1\"><title>View Profile</title>"
 					+ "</head><body>");
 			
@@ -61,7 +61,7 @@ public class ReimbursementView extends HttpServlet {
 			
 			pw.write(tableEnd);
 
-			pw.write("</body><script src=\"displayStuff.js\"></script></html>");*/
+			pw.write("</body><script src=\"displayStuff.js\"></script></html>");
 		} catch (NullPointerException e) {
 			e.printStackTrace();
 		}
