@@ -36,7 +36,7 @@ public class ReimbursementView extends HttpServlet {
 		try {
 			HttpSession session = request.getSession();
 			Employee e = EmployeeService.getEService().getEmployeeById((int)session.getAttribute("user"));
-			//System.out.println((int)session.getAttribute("user"));
+			//hello world
 			List<Reimbursment> pendList = ReimbursmentService.getRService().viewEmployeePending(e.getU_ID());
 			List<Reimbursment> resolveList = ReimbursmentService.getRService().viewEmployeeResolved(e.getU_ID());
 			
